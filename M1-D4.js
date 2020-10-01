@@ -20,14 +20,17 @@ let l2 = 8;
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
-let x = 7;
+let x = 9;
 let y = 9;
-//let crazySum;
 
-//const crazySum = (x, y) => ? (x === y) : 3 * (x + y);
-
-
-   // console.log(crazysum(x, y));
+function crazySum (x, y){
+  //  return ( ? x === y : 3 * (x + y));
+  if (x === y) {
+    crazySum = 3 * (x + y);
+} else {
+}
+}
+     console.log(crazysum(x, y));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -48,13 +51,24 @@ function boundary(int){
 }
 console.log (boundary(400));
 
-
-
 /* EXERCISE 5
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 */
 
 /* WRITE YOUR CODE HERE */
+
+let s;
+
+function strivify(s) {
+    const result = 'strive${s}'
+    if (s.startswith("Strive")) {
+        return s
+    } else {
+        return result
+    }
+}
+    console.log(strivify("S"));
+
 
 
 /* EXERCISE 6
