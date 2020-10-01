@@ -12,20 +12,22 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculate the ar
 let l1 = 6;
 let l2 = 8;
 
-//const area = function (l1, l2) {
-    
-  //  return l1 + l1 + l2 + l2;
-//}
+   const area = (l1, l2) => l1 * l2;
 
-    const area = (l1, l2) => l1 + l1 + l2 + l2;
-
-    console.log ("Rectangle area is:", area);
+    console.log ("Rectangle area is:", area(l1, l2));
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
+let x = 7;
+let y = 9;
+//let crazySum;
 
+//const crazySum = (x, y) => ? (x === y) : 3 * (x + y);
+
+
+   // console.log(crazysum(x, y));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -41,11 +43,19 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 
 /* WRITE YOUR CODE HERE */
 
+function boundary(int){
+    return (20 < int && int <= 100 || int === 400 ? true : false);
+}
+console.log (boundary(400));
+
+
+
 /* EXERCISE 5
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 */
 
 /* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
@@ -53,6 +63,9 @@ HINT: Module Operator
 */
 
 /* WRITE YOUR CODE HERE */
+
+
+
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
