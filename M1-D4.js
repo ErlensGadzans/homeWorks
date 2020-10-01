@@ -59,10 +59,10 @@ Write a function "strivify" which accepts a string S. Add to S "Strive" in front
 
 let s;
 
-function strivify(s) {
-    const result = 'strive${s}'
-    if (s.startswith("Strive")) {
-        return s
+function strivify(S) {
+    const result = 'strive${S}'
+    if (S.startsWith("Strive")) {
+        return S
     } else {
         return result
     }
