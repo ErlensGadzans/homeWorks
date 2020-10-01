@@ -26,11 +26,11 @@ let y = 9;
 function crazySum (x, y){
   //  return ( ? x === y : 3 * (x + y));
   if (x === y) {
-    crazySum = 3 * (x + y);
+    return  3 * (x + y);
 } else {
 }
 }
-     console.log(crazysum(x, y));
+     console.log(crazySum(x, y));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
