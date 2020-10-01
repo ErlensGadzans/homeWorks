@@ -28,9 +28,10 @@ function crazySum (x, y){
   if (x === y) {
     return  3 * (x + y);
 } else {
+    return "Values are not the same"
 }
 }
-     console.log(crazySum(x, y));
+     console.log("CrazySum is:", crazySum(x, y));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -39,6 +40,16 @@ Returns triple their absolute difference if
 the specified
 number is greater than 19.
 */
+let num = 19;
+let givenNumber = 21;
+
+const crazyDiff = function (num, givenNumber) {
+const difference = givenNumber - num;
+    if (givenNumber > 19);{
+        return difference * 3;
+    }
+}
+    console.log("Tripled difference between a given number and 19 is:", crazyDiff (num, givenNumber));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
@@ -77,8 +88,18 @@ HINT: Module Operator
 */
 
 /* WRITE YOUR CODE HERE */
-
-
+const check3and7 = function (number){
+    if (number % 3 === 0 && number % 7 === 0){
+        return "multiple of both"
+    } else if (number % 3 === 0){
+        return "multiple of 3"
+    } else if (number % 7 === 0){
+        return "multiple of 7"
+    } else {
+        return "it is not mutiple of 3 or 7"
+    }
+}
+console.log (check3and7(49));
 
 
 /* EXERCISE 7
@@ -86,25 +107,48 @@ Write a function "reverseString" to reverse programmatically a given string (es.
 */
 
 /* WRITE YOUR CODE HERE */
+const reverseString = function (givenString){
+    return givenString.split ("").reverse().join("");
+}
+    console.log(reverseString("John"));
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
 /* WRITE YOUR CODE HERE */
+const upperFirst = function (S){
+    let words = S.toLowerCase().split(" ");
+    for (i=0; i<words.length; i++) {
+        words[i]=words[i].charAt(0).toUpperCase()+words[i].slice(1);
+    }
+    return words.join(" ");
+}
+    console.log (upperFirst("first letters of this sentence are capitalized"));
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
 /* WRITE YOUR CODE HERE */
+const cutString = (splitWord) => splitWord.substring(1, splitWord.length-1); //i dont understand meaning of "substring"
+
+console.log(cutString("Stallone"));
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
 
 /* WRITE YOUR CODE HERE */
+const giveMeRandom = (S) => {
+    randomArray=[];
+    for (let i = 0; i<S; i++) {
+        randomArray.push(Math.floor(Math.random()*11));
+    }
+    return randomArray
+}
 
+console.log(giveMeRandom (4));
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
 */
