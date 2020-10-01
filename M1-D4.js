@@ -9,10 +9,23 @@ ASSIGNMENT RULES
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
+let l1 = 6;
+let l2 = 8;
+
+//const area = function (l1, l2) {
+    
+  //  return l1 + l1 + l2 + l2;
+//}
+
+    const area = (l1, l2) => l1 + l1 + l2 + l2;
+
+    console.log ("Rectangle area is:", area);
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
+
+
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
